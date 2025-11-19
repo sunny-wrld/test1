@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aurora Edge</string>
+    <string name="message_hint">Digite sua mensagem...</string>
+    <string name="send">Enviar</string>
+    <string name="loading_model">Carregando modelo de IA...</string>
+    <string name="model_ready">Modelo pronto - 100% Offline</string>
+    <string name="model_error">Erro ao carregar modelo</string>
+    <string name="model_load_failed">Falha ao carregar modelo. Verifique se o arquivo está em /models/</string>
+    <string name="model_not_ready">Aguarde o modelo carregar...</string>
+    <string name="thinking">Aurora está pensando...</string>
+    <string name="error_response">Erro: %1$s</string>
+    <string name="welcome_message">Olá! Sou Aurora Edge, seu assistente de IA offline. Como posso ajudar?</string>
+</resources>
+
+
+
