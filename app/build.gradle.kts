@@ -44,6 +44,17 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    
+    // Configuração NDK para código nativo
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.22.1"
+        }
+    }
+    
+    // Configuração de versão NDK (opcional - use a versão instalada se não especificar)
+    // ndkVersion = "26.1.10909125"
 }
 
 dependencies {
@@ -62,6 +73,9 @@ dependencies {
     
     // ONNX Runtime Mobile (para modelos de IA)
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.16.3")
+    
+    // Nota: llama.cpp deve ser compilado como biblioteca nativa via CMake
+    // Não é uma dependência Maven/Gradle tradicional
     
     // Testes
     testImplementation("junit:junit:4.13.2")

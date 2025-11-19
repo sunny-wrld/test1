@@ -163,9 +163,12 @@ class ChatActivity : AppCompatActivity() {
                 }
                 
                 withContext(Dispatchers.Main) {
-                    // Remove mensagem de "digitando"
-                    chatMessages.removeAt(chatMessages.size - 1)
-                    chatAdapter.notifyItemRemoved(chatMessages.size)
+                    // Remove mensagem de "digitando" se existir
+                    if (chatMessages.isNotEmpty() && chatMessages.last().isTyping) {
+                        val lastIndex = chatMessages.size - 1
+                        chatMessages.removeAt(lastIndex)
+                        chatAdapter.notifyItemRemoved(lastIndex)
+                    }
                     
                     // Adiciona resposta da IA
                     val aiMessage = ChatMessage(
@@ -179,9 +182,12 @@ class ChatActivity : AppCompatActivity() {
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    // Remove mensagem de "digitando"
-                    chatMessages.removeAt(chatMessages.size - 1)
-                    chatAdapter.notifyItemRemoved(chatMessages.size)
+                    // Remove mensagem de "digitando" se existir
+                    if (chatMessages.isNotEmpty() && chatMessages.last().isTyping) {
+                        val lastIndex = chatMessages.size - 1
+                        chatMessages.removeAt(lastIndex)
+                        chatAdapter.notifyItemRemoved(lastIndex)
+                    }
                     
                     // Adiciona mensagem de erro
                     val errorMessage = ChatMessage(
