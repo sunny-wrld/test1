@@ -46,15 +46,14 @@ android {
     }
     
     // Configuração NDK para código nativo
+    ndkVersion = "26.1.10909125"
+    
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
             version = "3.22.1"
         }
     }
-    
-    // Configuração de versão NDK (opcional - use a versão instalada se não especificar)
-    // ndkVersion = "26.1.10909125"
 }
 
 dependencies {
