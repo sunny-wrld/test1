@@ -60,19 +60,15 @@ dependencies {
     // Coroutines para operações assíncronas
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     
-    // Llama.cpp Mobile (via JNI)
-    // Nota: Você precisará compilar a biblioteca nativa separadamente
-    // ou usar uma versão pré-compilada
-    implementation("com.github.ggerganov:llama.cpp:master-SNAPSHOT")
-    
-    // ONNX Runtime Mobile (alternativa)
-    // implementation("com.microsoft.onnxruntime:onnxruntime-android:1.16.3")
+    // ONNX Runtime Mobile (para modelos de IA)
+    implementation("com.microsoft.onnxruntime:onnxruntime-android:1.16.3")
     
     // Testes
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
 
 
 

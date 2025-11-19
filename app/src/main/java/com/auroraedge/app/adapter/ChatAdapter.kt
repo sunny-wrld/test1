@@ -65,3 +65,4 @@ class ChatAdapter(private val messages: List<ChatMessage>) :
 
 
 
+

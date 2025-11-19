@@ -54,3 +54,4 @@ Obrigado. Estou à disposição para perguntas.
 **Foco**: Problema → Solução → Impacto → Investimento
 
 
+

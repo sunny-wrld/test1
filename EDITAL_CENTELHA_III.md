@@ -62,3 +62,4 @@ Aurora Edge é um assistente de IA completamente offline para Android que execut
 **Aderência**: ODS 9, inovação, impacto regional, viabilidade técnica
 
 
+

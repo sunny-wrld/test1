@@ -483,3 +483,4 @@ Aurora Edge representa uma abordagem inovadora para IA no edge, priorizando priv
 **Autor**: Equipe Aurora Edge
 
 
+
